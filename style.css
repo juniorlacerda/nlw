@@ -105,6 +105,15 @@ section ul li:hover {
     border: 1px solid #443E54;
 }
 
+footer {
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(180deg, #121214 0%, #191523 100%);
+    letter-spacing: -0.18px;
+    color: #A1A1AA;
+    font-size: 14px;
+  }
+
 /* animation */
 
 header div {
@@ -127,6 +136,10 @@ main section:nth-child(3) {
     animation-delay: .4s;
 }
 
+footer {
+    animation: fromBottom2 2s .4s backwards;
+}
+
 @keyframes fromTop {
     from {
         opacity: 0;
@@ -143,6 +156,18 @@ main section:nth-child(3) {
     from {
         opacity: 0;
         transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fromBottom2 {
+    from {
+        opacity: 0;
+        transform: translateY(0px);
     }
 
     to {
